@@ -53,7 +53,7 @@ local CTab = Window:MakeTab({
 
 -- TOGGLES
 
-MTabTab:AddToggle({
+MTab:AddToggle({
 	Name = "Auto Collect Cups",
 	Default = false,
 	Callback = function(Value)
@@ -62,7 +62,7 @@ MTabTab:AddToggle({
 	end    
 })
 
-MTabTab:AddToggle({
+MTab:AddToggle({
 	Name = "Auto Unequip Tools",
 	Default = false,
 	Callback = function(Value)
@@ -96,7 +96,7 @@ CTab:AddLabel("made by silence wench")
 function AutoGet()
     while task.wait() do
         if not getgenv().Enabled then break; end
-        for i, v in pairs(game:GetService("Workspace").CupsFolder:GetDescendants) do
+        for i, v in pairs(game:GetService("Workspace").CupsFolder:GetDescendants())) do
             if v.ClassName == "TouchInterest" and v.Parent then
                 firetouchinterest(playerhead, v.Parent, 0)
             end
@@ -106,7 +106,7 @@ end
 
 function GetOnce()
     if not getgenv().Enabled then break; end
-    for i, v in pairs(game:GetService("Workspace").CupsFolder:GetDescendants) do
+    for i, v in pairs(game:GetService("Workspace").CupsFolder:GetDescendants())) do
         if v.ClassName == "TouchInterest" and v.Parent then
             firetouchinterest(playerhead, v.Parent, 0)
         end
