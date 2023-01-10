@@ -1,4 +1,4 @@
-local Players = game:GetService("Players")
+if game.PlaceId == 10583817431
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Meme Hub l TIG l", HidePremium = false, SaveConfig = true, ConfigFolder = "Memermanner", IntroText = "Trollge Incident game"})
@@ -124,6 +124,9 @@ end
 
 function AUE()
     while Enabled2 == true do
-        Humanoid:Unequip
+        Humanoid:Unequip()
     end
 end
+
+end
+OrionLib:Init()
