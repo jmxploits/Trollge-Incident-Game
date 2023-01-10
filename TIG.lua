@@ -15,6 +15,7 @@ local Humanoid = Character:WaitForChild("Humanoid")
 local OilTool = Backpack:WaitForChild("Oil Cup")
 local BloodTool = Backpack:WaitForChild("Blood Cup")
 local Players = game.Players.LocalPlayer
+local playerhead = game.Players.LocalPlayer.Character.Head
 
 
 OrionLib:MakeNotification({
@@ -94,7 +95,6 @@ CTab:AddLabel("made by silence wench")
 
 -- FUNCTIONS
 function AutoGet()
-    local playerhead = game.Players.LocalPlayer.Character.Head
     while task.wait() do
         if not getgenv().Enabled then break; end
         for i, v in pairs(game:GetService("Workspace").CupsFolder:GetDescendants) do
@@ -106,7 +106,6 @@ function AutoGet()
 end
 
 function GetOnce()
-    local playerhead = game.Players.LocalPlayer.Character.Head
     if not getgenv().Enabled then break; end
     for i, v in pairs(game:GetService("Workspace").CupsFolder:GetDescendants) do
         if v.ClassName == "TouchInterest" and v.Parent then
