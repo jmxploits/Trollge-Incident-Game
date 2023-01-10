@@ -14,7 +14,7 @@ local Character = LocalPlayer.Character
 local Humanoid = Character:WaitForChild("Humanoid")
 local OilTool = Backpack:WaitForChild("Oil Cup")
 local BloodTool = Backpack:WaitForChild("Blood Cup")
-local Players = game:GetService("Players").LocalPlayer
+local Players = game.Players.LocalPlayer
 
 
 OrionLib:MakeNotification({
