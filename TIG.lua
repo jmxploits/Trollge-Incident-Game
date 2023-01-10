@@ -1,4 +1,3 @@
-if game.PlaceId == 10583817431 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Meme Hub l TIG l", HidePremium = false, SaveConfig = true, ConfigFolder = "Memermanner", IntroText = "Trollge Incident game"})
@@ -128,5 +127,5 @@ function AUE()
     end
 end
 
-end
+
 OrionLib:Init()
